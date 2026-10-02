@@ -1,0 +1,2131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>APN Appliances | Innovation. Quality. Everyday Comfort.</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    color:#182033;
+    background:#ffffff;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+section{
+    scroll-margin-top:90px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+
+/* ================= HEADER ================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.97);
+    border-bottom:1px solid #e7e9ef;
+}
+
+.navbar{
+    width:90%;
+    max-width:1250px;
+    min-height:78px;
+    margin:auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.logo{
+    font-size:25px;
+    font-weight:900;
+    letter-spacing:1px;
+    color:#293c9c;
+    white-space:nowrap;
+}
+
+.logo span{
+    color:#7045c2;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    flex-wrap:wrap;
+    gap:16px;
+}
+
+nav a{
+    font-size:13px;
+    font-weight:700;
+    color:#343b4e;
+}
+
+nav a:hover{
+    color:#553db2;
+}
+
+.nav-contact{
+    background:#293c9c;
+    color:white !important;
+    padding:10px 18px;
+    border-radius:25px;
+}
+
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:650px;
+
+    display:flex;
+    align-items:center;
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            #e6e4ff 0%,
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #f5f7ff,
+            #ffffff
+        );
+}
+
+.hero-content{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.eyebrow{
+    color:#6142b3;
+    font-size:12px;
+    font-weight:800;
+    letter-spacing:2px;
+}
+
+.hero h1{
+    font-size:clamp(45px,6vw,72px);
+    line-height:1;
+    letter-spacing:-2px;
+    margin:18px 0;
+}
+
+.gradient-text{
+    background:linear-gradient(
+        90deg,
+        #293c9c,
+        #7544c5
+    );
+
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.hero p{
+    max-width:560px;
+    color:#6e7688;
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 23px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:700;
+}
+
+.btn-primary{
+    background:#293c9c;
+    color:white;
+}
+
+.btn-secondary{
+    background:white;
+    border:1px solid #d8dbe5;
+}
+
+
+/* ================= HERO VISUAL ================= */
+
+.hero-visual{
+    min-height:430px;
+    position:relative;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.visual-card{
+    position:absolute;
+
+    width:220px;
+    height:285px;
+
+    border-radius:25px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #eef0f8
+        );
+
+    box-shadow:
+        0 25px 60px rgba(30,40,100,.14);
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+.visual-card.main{
+    width:270px;
+    height:350px;
+    z-index:3;
+}
+
+.visual-card.left{
+    left:0;
+    top:70px;
+    transform:rotate(-8deg);
+}
+
+.visual-card.right{
+    right:0;
+    top:55px;
+    transform:rotate(8deg);
+}
+
+.visual-icon{
+    font-size:70px;
+    margin-bottom:18px;
+}
+
+.visual-card h3{
+    font-size:19px;
+}
+
+.visual-card p{
+    color:#7a8192;
+    font-size:13px;
+}
+
+
+/* ================= GENERAL SECTIONS ================= */
+
+.section{
+    padding:90px 0;
+}
+
+.section-grey{
+    background:#f8f9fd;
+}
+
+.section-heading{
+    text-align:center;
+    max-width:720px;
+    margin:0 auto 50px;
+}
+
+.section-heading h2{
+    font-size:42px;
+    line-height:1.1;
+    margin:12px 0;
+}
+
+.section-heading p{
+    color:#747c8e;
+}
+
+
+/* ================= CATEGORY GRID ================= */
+
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:18px;
+}
+
+.product-card{
+    background:white;
+    border:1px solid #e7e9f0;
+    border-radius:22px;
+    overflow:hidden;
+
+    transition:.25s;
+
+    box-shadow:
+        0 10px 30px rgba(30,40,90,.04);
+}
+
+.product-card:hover{
+    transform:translateY(-6px);
+
+    box-shadow:
+        0 18px 40px rgba(30,40,90,.1);
+}
+
+.product-image{
+    height:250px;
+    background:#f3f4f8;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:18px;
+}
+
+.product-image img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+.product-info{
+    padding:22px;
+}
+
+.product-code{
+    display:inline-block;
+
+    background:#f0efff;
+    color:#5d43b0;
+
+    padding:5px 10px;
+    border-radius:20px;
+
+    font-size:10px;
+    font-weight:800;
+
+    letter-spacing:1px;
+}
+
+.product-info h3{
+    font-size:20px;
+    margin:13px 0 7px;
+}
+
+.product-info p{
+    color:#737b8e;
+    font-size:13px;
+    margin-bottom:18px;
+}
+
+.product-link{
+    display:inline-block;
+
+    background:#293c9c;
+    color:white;
+
+    padding:10px 17px;
+    border-radius:22px;
+
+    font-size:12px;
+    font-weight:700;
+}
+
+
+/* ================= PRODUCT GRIDS ================= */
+
+.products-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.products-grid .product-card{
+    min-width:0;
+}
+
+.products-grid .product-image{
+    height:280px;
+}
+
+
+/* ================= ANGLE VALVES ================= */
+
+.angle-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:35px;
+}
+
+.angle-grid .product-card{
+    min-width:0;
+}
+
+.angle-grid .product-image{
+    height:300px;
+}
+
+
+/* ================= SANITARYWARE ================= */
+
+.sanitary-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:35px;
+}
+
+.sanitary-grid .product-card{
+    min-width:0;
+}
+
+.sanitary-grid .product-image{
+    height:300px;
+}
+
+
+/* ================= FEATURE PRODUCT ================= */
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:55px;
+    align-items:center;
+}
+
+.feature-image{
+    min-height:450px;
+
+    background:#f5f6fa;
+
+    border-radius:30px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:25px;
+}
+
+.feature-image img{
+    width:100%;
+    height:410px;
+    object-fit:contain;
+}
+
+.feature-detail h2{
+    font-size:42px;
+    line-height:1.1;
+    margin:15px 0;
+}
+
+.feature-detail > p{
+    color:#737b8e;
+    margin-bottom:20px;
+}
+
+.detail-box{
+    background:#f7f8fc;
+    padding:20px;
+    border-radius:18px;
+    margin-bottom:18px;
+}
+
+.detail-box p{
+    color:#727a8b;
+    font-size:14px;
+}
+
+.contact-product{
+    display:inline-block;
+
+    background:#293c9c;
+    color:white;
+
+    padding:14px 23px;
+    border-radius:28px;
+
+    font-weight:700;
+    font-size:14px;
+}
+
+
+/* ================= WHY APN ================= */
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.why-card{
+    background:white;
+
+    padding:28px;
+
+    border-radius:20px;
+
+    border:1px solid #e7e9f0;
+}
+
+.why-number{
+    color:#6142b3;
+    font-weight:800;
+    font-size:12px;
+}
+
+.why-card h3{
+    margin:14px 0 7px;
+}
+
+.why-card p{
+    color:#737b8e;
+    font-size:14px;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact-section{
+    padding:95px 0;
+    background:#f8f9fd;
+}
+
+.contact-box{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+
+    padding:65px 30px;
+
+    border-radius:30px;
+
+    background:
+        linear-gradient(
+            110deg,
+            #293c9c,
+            #6c40bd
+        );
+
+    text-align:center;
+    color:white;
+}
+
+.contact-box h2{
+    font-size:42px;
+    margin:12px 0;
+}
+
+.contact-box p{
+    max-width:650px;
+    margin:0 auto 28px;
+    color:#e8e9ff;
+}
+
+.contact-number{
+    display:inline-block;
+
+    background:white;
+    color:#293c9c;
+
+    padding:15px 28px;
+
+    border-radius:30px;
+
+    font-size:20px;
+    font-weight:800;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#111827;
+    color:white;
+    padding:60px 0 25px;
+}
+
+.footer-grid{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    gap:35px;
+}
+
+footer h2{
+    margin-bottom:12px;
+}
+
+footer h3{
+    font-size:14px;
+    margin-bottom:14px;
+}
+
+footer p,
+footer li,
+footer a{
+    color:#aeb5c5;
+    font-size:13px;
+}
+
+footer ul{
+    list-style:none;
+}
+
+footer li{
+    margin-bottom:8px;
+}
+
+.copyright{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto 0;
+
+    padding-top:20px;
+
+    border-top:1px solid #2d3545;
+
+    color:#8d96a7;
+    font-size:11px;
+}
+
+
+/* ================= TABLET ================= */
+
+@media(max-width:1100px){
+
+    .category-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .products-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .angle-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .sanitary-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .hero-content{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .hero p{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .buttons{
+        justify-content:center;
+    }
+
+    .why-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .footer-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .feature-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:700px){
+
+    .navbar{
+        flex-direction:column;
+        padding:16px 0;
+    }
+
+    nav{
+        justify-content:center;
+        gap:10px;
+    }
+
+    .hero{
+        padding:70px 0;
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+
+    .hero-visual{
+        transform:scale(.75);
+        min-height:360px;
+    }
+
+    .category-grid,
+    .products-grid,
+    .angle-grid,
+    .sanitary-grid,
+    .why-grid,
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .section-heading h2,
+    .feature-detail h2,
+    .contact-box h2{
+        font-size:34px;
+    }
+
+    .feature-image{
+        min-height:350px;
+    }
+
+    .feature-image img{
+        height:320px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
+
+<header>
+
+<div class="navbar">
+
+<a href="#home" class="logo">
+APN <span>APPLIANCES</span>
+</a>
+
+<nav>
+
+<a href="#home">Home</a>
+
+<a href="#products">Products</a>
+
+<a href="#heating-taps">Heating Taps</a>
+
+<a href="#angle-valves">Angle Valves</a>
+
+<a href="#shoe-cover">Shoe Cover</a>
+
+<a href="#sanitaryware">Sanitaryware</a>
+
+<a href="#ac-covers">AC Covers</a>
+
+<a href="#contact" class="nav-contact">
+Contact
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+
+<div>
+
+<span class="eyebrow">
+APN APPLIANCES
+</span>
+
+<h1>
+
+Innovation.<br>
+
+Quality.<br>
+
+<span class="gradient-text">
+Everyday Comfort.
+</span>
+
+</h1>
+
+<p>
+
+Smart and practical products designed for modern
+Indian homes, bringing innovation, quality and
+everyday convenience together.
+
+</p>
+
+<div class="buttons">
+
+<a href="#products" class="btn btn-primary">
+Explore Products
+</a>
+
+<a href="#contact" class="btn btn-secondary">
+Contact Our Team
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="hero-visual">
+
+
+<div class="visual-card left">
+
+<div class="visual-icon">
+🚿
+</div>
+
+<h3>
+Instant Heating
+</h3>
+
+<p>
+Smart hot-water solutions
+</p>
+
+</div>
+
+
+
+<div class="visual-card main">
+
+<div class="visual-icon">
+🚰
+</div>
+
+<h3>
+APN Appliances
+</h3>
+
+<p>
+Modern solutions for everyday living
+</p>
+
+</div>
+
+
+
+<div class="visual-card right">
+
+<div class="visual-icon">
+🔧
+</div>
+
+<h3>
+Quality Fittings
+</h3>
+
+<p>
+Practical home solutions
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PRODUCT CATEGORIES
+========================================================= -->
+
+<section class="section section-grey" id="products">
+
+<div class="container">
+
+
+<div class="section-heading">
+
+<span class="eyebrow">
+OUR PRODUCTS
+</span>
+
+<h2>
+Solutions designed for everyday life.
+</h2>
+
+<p>
+Explore the complete APN Appliances product range.
+</p>
+
+</div>
+
+
+
+<div class="category-grid">
+
+
+<!-- CATEGORY 1 -->
+
+<a href="#heating-taps" class="product-card">
+
+<div class="product-image">
+
+<img
+src="instant-heating-tap.jpg"
+alt="Instant Heating Taps"
+>
+
+</div>
+
+<div class="product-info">
+
+<span class="product-code">
+CATEGORY 01
+</span>
+
+<h3>
+Instant Heating Taps
+</h3>
+
+<p>
+Instant hot-water solutions for modern homes.
+</p>
+
+<span class="product-link">
+Explore →
+</span>
+
+</div>
+
+</a>
+
+
+
+<!-- CATEGORY 2 -->
+
+<a href="#angle-valves" class="product-card">
+
+<div class="product-image">
+
+<img
+src="angle-valve-1.jpeg"
+alt="Angle Valves"
+>
+
+</div>
+
+<div class="product-info">
+
+<span class="product-code">
+CATEGORY 02
+</span>
+
+<h3>
+Angle Valves
+</h3>
+
+<p>
+Practical fittings for modern plumbing.
+</p>
+
+<span class="product-link">
+Explore →
+</span>
+
+</div>
+
+</a>
+
+
+
+<!-- CATEGORY 3 -->
+
+<a href="#shoe-cover" class="product-card">
+
+<div class="product-image">
+
+<img
+src="washing-machine-shoe-cover.jpeg"
+alt="Washing Machine Shoe Cover"
+>
+
+</div>
+
+<div class="product-info">
+
+<span class="product-code">
+CATEGORY 03
+</span>
+
+<h3>
+Washing Machine Shoe Cover
+</h3>
+
+<p>
+A simple everyday household solution.
+</p>
+
+<span class="product-link">
+Explore →
+</span>
+
+</div>
+
+</a>
+
+
+
+<!-- CATEGORY 4 -->
+
+<a href="#sanitaryware" class="product-card">
+
+<div class="product-image">
+
+<img
+src="sanitary-01.jpg"
+alt="Sanitaryware"
+>
+
+</div>
+
+<div class="product-info">
+
+<span class="product-code">
+CATEGORY 04
+</span>
+
+<h3>
+Sanitaryware
+</h3>
+
+<p>
+Modern fittings for contemporary spaces.
+</p>
+
+<span class="product-link">
+Explore →
+</span>
+
+</div>
+
+</a>
+
+
+
+<!-- CATEGORY 5 -->
+
+<a href="#ac-covers" class="product-card">
+
+<div class="product-image">
+
+<img
+src="ac-heat-protective-cover.jpeg"
+alt="AC Heat Protective Cover"
+>
+
+</div>
+
+<div class="product-info">
+
+<span class="product-code">
+CATEGORY 05
+</span>
+
+<h3>
+AC Heat Protective Covers
+</h3>
+
+<p>
+Protective covers for outdoor AC units.
+</p>
+
+<span class="product-link">
+Explore →
+</span>
+
+</div>
+
+</a>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CATEGORY 01 — INSTANT HEATING TAPS
+========================================================= -->
+
+<section class="section" id="heating-taps">
+
+<div class="container">
+
+
+<div class="section-heading">
+
+<span class="eyebrow">
+CATEGORY 01
+</span>
+
+<h2>
+Instant Heating Taps
+</h2>
+
+<p>
+Four available models using the same representative
+heating-tap image.
+</p>
+
+</div>
+
+
+
+<div class="products-grid">
+
+
+<!-- MODEL 01 -->
+
+<div class="product-card">
+
+<div class="product-image">
+
+<img
+src="instant-heating-tap-1.jpg"
+alt="APN Instant Heating Tap Model 01"
+>
+
+</div>
+
+<div class="product-info">
+
+<span class="product-code">
+MODEL 01
+</span>
+
+<h3>
+Instant Heating Tap
+</h3>
+
+<p>
+Instant heating tap with digital temperature display.
+</p>
+
+<a href="#contact" class="product-link">
+Contact Team
+</a>
+
+</div>
+
+</div>
+
+
+
+<!-- MODEL 02 -->
+
+<div class="product-card">
+
+<div class="product-image">
+
+<img
+src="instant-heating-tap-2.jpg"
+alt="APN Instant Heating Tap Model 02"
+>
+
+</div>
+
+<div class="product-info">
+
+<span class="product-code">
+MODEL 02
+</span>
+
+<h3>
+Instant Heating Tap
+</h3>
+
+<p>
+Instant heating tap with digital temperature display.
+</p>
+
+<a href="#contact" class="product-link">
+Contact Team
+</a>
+
+</div>
+
+</div>
+
+
+
+<!-- MODEL 03 -->
+
+<div class="product-card">
+
+<div class="product-image">
+
+<img
+src="instant-heating-tap-3.jpg"
+alt="APN Instant Heating Tap Model 03"
+>
+
+</div>
+
+<div class="product-info">
+
+<span class="product-code">
+MODEL 03
+</span>
+
+<h3>
+Instant Heating Tap
+</h3>
+
+<p>
+Instant heating tap with digital temperature display.
+</p>
+
+<a href="#contact" class="product-link">
+Contact Team
+</a>
+
+</div>
+
+</div>
+
+
+
+<!-- MODEL 04 -->
+
+<div class="product-card">
+
+<div class="product-image">
+
+<img
+src="instant-heating-tap-4.jpg"
+alt="APN Instant Heating Tap Model 04"
+>
+
+</div>
+
+<div class="product-info">
+
+<span class="product-code">
+MODEL 04
+</span>
+
+<h3>
+Instant Heating Tap
+</h3>
+
+<p>
+Instant heating tap with digital temperature display.
+</p>
+
+<a href="#contact" class="product-link">
+Contact Team
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CATEGORY 02 — ANGLE VALVES
+========================================================= -->
+
+<section class="section section-grey" id="angle-valves">
+
+<div class="container">
+
+
+<div class="section-heading">
+
+<span class="eyebrow">
+CATEGORY 02
+</span>
+
+<h2>
+Angle Valves
+</h2>
+
+<p>
+Choose from the available APN angle-valve models.
+</p>
+
+</div>
+
+
+
+<div class="angle-grid">
+
+
+<!-- ANGLE VALVE 01 -->
+
+<div class="product-card">
+
+<div class="product-image">
+
+<img
+src="angle-valve-1.jpeg"
+alt="APN Angle Valve Model 01"
+>
+
+</div>
+
+<div class="product-info">
+
+<span class="product-code">
+MODEL 01
+</span>
+
+<h3>
+Angle Valve
+</h3>
+
+<p>
+Chrome-finish plumbing angle valve.
+</p>
+
+<a href="#contact" class="product-link">
+Contact Team
+</a>
+
+</div>
+
+</div>
+
+
+
+<!-- ANGLE VALVE 02 -->
+
+<div class="product-card">
+
+<div class="product-image">
+
+<img
+src="angle-valve-2.jpeg"
+alt="APN Angle Valve Model 02"
+>
+
+</div>
+
+<div class="product-info">
+
+<span class="product-code">
+MODEL 02
+</span>
+
+<h3>
+Angle Valve
+</h3>
+
+<p>
+Chrome-finish plumbing angle valve.
+</p>
+
+<a href="#contact" class="product-link">
+Contact Team
+</a>
+
+</div>
+
+</div>
+
+
+
+<!-- ANGLE VALVE 03 -->
+
+<div class="product-card">
+
+<div class="product-image">
+
+<img
+src="angle-valve-3.jpeg"
+alt="APN Angle Valve Model 03"
+>
+
+</div>
+
+<div class="product-info">
+
+<span class="product-code">
+MODEL 03
+</span>
+
+<h3>
+Angle Valve
+</h3>
+
+<p>
+Modern multi-connection plumbing valve.
+</p>
+
+<a href="#contact" class="product-link">
+Contact Team
+</a>
+
+</div>
+
+</div>
+
+
+
+<!-- ANGLE VALVE 04 -->
+
+<div class="product-card">
+
+<div class="product-image">
+
+<img
+src="angle-valve-4.jpeg"
+alt="APN Angle Valve Model 04"
+>
+
+</div>
+
+<div class="product-info">
+
+<span class="product-code">
+MODEL 04
+</span>
+
+<h3>
+Angle Valve
+</h3>
+
+<p>
+Chrome-finish plumbing fitting.
+</p>
+
+<a href="#contact" class="product-link">
+Contact Team
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CATEGORY 03 — WASHING MACHINE SHOE COVER
+========================================================= -->
+
+<section class="section" id="shoe-cover">
+
+<div class="container">
+
+
+<div class="section-heading">
+
+<span class="eyebrow">
+CATEGORY 03
+</span>
+
+<h2>
+Washing Machine Shoe Cover
+</h2>
+
+<p>
+A simple practical solution for washing shoes
+in a washing machine.
+</p>
+
+</div>
+
+
+
+<div class="feature-grid">
+
+
+<div class="feature-image">
+
+<img
+src="washing-machine-shoe-cover.jpeg"
+alt="Washing Machine Shoe Cover"
+>
+
+</div>
+
+
+
+<div class="feature-detail">
+
+<span class="product-code">
+APN PRODUCT
+</span>
+
+<h2>
+Washing Machine Shoe Cover
+</h2>
+
+<p>
+A washable protective shoe bag designed to make
+machine washing shoes more convenient.
+</p>
+
+
+<div class="detail-box">
+
+<strong>
+Product Features
+</strong>
+
+<p>
+Protective mesh interior • Zipper closure •
+Reusable design • Easy to wash
+</p>
+
+</div>
+
+
+<a href="#contact" class="contact-product">
+Contact Team for Details
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CATEGORY 04 — SANITARYWARE
+========================================================= -->
+
+<section class="section section-grey" id="sanitaryware">
+
+<div class="container">
+
+
+<div class="section-heading">
+
+<span class="eyebrow">
+CATEGORY 04
+</span>
+
+<h2>
+Sanitaryware
+</h2>
+
+<p>
+Selected sanitary fittings for household plumbing applications.
+</p>
+
+</div>
+
+
+
+<div class="sanitary-grid">
+
+
+<!-- SANITARY 01 -->
+
+<div class="product-card">
+
+<div class="product-image">
+
+<img
+src="sanitary-01.jpg"
+alt="APN Health Faucet / Jet Spray"
+>
+
+</div>
+
+<div class="product-info">
+
+<span class="product-code">
+MODEL 01
+</span>
+
+<h3>
+Health Faucet / Jet Spray
+</h3>
+
+<p>
+APN sanitaryware product.
+</p>
+
+<a href="#contact" class="product-link">
+Contact Team
+</a>
+
+</div>
+
+</div>
+
+
+
+<!-- SANITARY 02 -->
+
+<div class="product-card">
+
+<div class="product-image">
+
+<img
+src="sanitary-02.jpg"
+alt="APN Bib Cock with Washing Machine Tap"
+>
+
+</div>
+
+<div class="product-info">
+
+<span class="product-code">
+MODEL 02
+</span>
+
+<h3>
+Bib Cock with Washing Machine Tap
+</h3>
+
+<p>
+APN sanitaryware product.
+</p>
+
+<a href="#contact" class="product-link">
+Contact Team
+</a>
+
+</div>
+
+</div>
+
+
+
+<!-- SANITARY 03 -->
+
+<div class="product-card">
+
+<div class="product-image">
+
+<img
+src="sanitary-03.jpg"
+alt="APN Angle Cock with Nozzle"
+>
+
+</div>
+
+<div class="product-info">
+
+<span class="product-code">
+MODEL 03
+</span>
+
+<h3>
+Angle Cock with Nozzle
+</h3>
+
+<p>
+APN sanitaryware product.
+</p>
+
+<a href="#contact" class="product-link">
+Contact Team
+</a>
+
+</div>
+
+</div>
+
+
+
+<!-- SANITARY 04 -->
+
+<div class="product-card">
+
+<div class="product-image">
+
+<img
+src="sanitary-04.jpg"
+alt="APN Wall Mounted Bib Cock"
+>
+
+</div>
+
+<div class="product-info">
+
+<span class="product-code">
+MODEL 04
+</span>
+
+<h3>
+Wall Mounted Bib Cock
+</h3>
+
+<p>
+APN sanitaryware product.
+</p>
+
+<a href="#contact" class="product-link">
+Contact Team
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CATEGORY 05 — AC HEAT PROTECTIVE COVER
+========================================================= -->
+
+<section class="section" id="ac-covers">
+
+<div class="container">
+
+
+<div class="section-heading">
+
+<span class="eyebrow">
+CATEGORY 05
+</span>
+
+<h2>
+AC Heat Protective Cover
+</h2>
+
+<p>
+Protective cover designed for outdoor air-conditioning units.
+</p>
+
+</div>
+
+
+
+<div class="feature-grid">
+
+
+<div class="feature-image">
+
+<img
+src="ac-heat-protective-cover.jpeg"
+alt="AC Heat Protective Cover"
+>
+
+</div>
+
+
+
+<div class="feature-detail">
+
+<span class="product-code">
+APN PRODUCT
+</span>
+
+<h2>
+AC Heat Protective Cover
+</h2>
+
+<p>
+A practical protective cover for outdoor AC units,
+designed for everyday protection from heat and exposure.
+</p>
+
+
+<div class="detail-box">
+
+<strong>
+Product Details
+</strong>
+
+<p>
+Protective top cover • Strap fastening •
+Outdoor AC compatible design • Practical everyday use
+</p>
+
+</div>
+
+
+<a href="#contact" class="contact-product">
+Contact Team for Details
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     WHY APN
+========================================================= -->
+
+<section class="section section-grey">
+
+<div class="container">
+
+
+<div class="section-heading">
+
+<span class="eyebrow">
+WHY APN APPLIANCES
+</span>
+
+<h2>
+Built around better everyday living.
+</h2>
+
+<p>
+Practical innovation and thoughtful products for modern homes.
+</p>
+
+</div>
+
+
+
+<div class="why-grid">
+
+
+<div class="why-card">
+
+<span class="why-number">
+01
+</span>
+
+<h3>
+Innovation
+</h3>
+
+<p>
+Practical product ideas designed around everyday needs.
+</p>
+
+</div>
+
+
+
+<div class="why-card">
+
+<span class="why-number">
+02
+</span>
+
+<h3>
+Quality
+</h3>
+
+<p>
+Products developed with attention to usability and reliability.
+</p>
+
+</div>
+
+
+
+<div class="why-card">
+
+<span class="why-number">
+03
+</span>
+
+<h3>
+Modern Design
+</h3>
+
+<p>
+Clean and functional solutions for contemporary spaces.
+</p>
+
+</div>
+
+
+
+<div class="why-card">
+
+<span class="why-number">
+04
+</span>
+
+<h3>
+Support
+</h3>
+
+<p>
+Customer-focused sales and support for our product range.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CONTACT
+========================================================= -->
+
+<section class="contact-section" id="contact">
+
+<div class="contact-box">
+
+<span
+class="eyebrow"
+style="color:#d9d6ff"
+>
+APN APPLIANCES
+</span>
+
+<h2>
+Need More Details?
+</h2>
+
+<p>
+Interested in an APN Appliances product?
+Contact our team for product specifications,
+pricing, availability and further information.
+</p>
+
+<div class="contact-number">
+apnappliances@gmail.com
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+<div class="footer-grid">
+
+
+<div>
+
+<h2>
+APN APPLIANCES
+</h2>
+
+<p>
+Innovation. Quality. Everyday Comfort.
+</p>
+
+<p style="margin-top:12px">
+Modern products and practical solutions
+for homes across India.
+</p>
+
+</div>
+
+
+
+<div>
+
+<h3>
+QUICK LINKS
+</h3>
+
+<ul>
+
+<li>
+<a href="#home">
+Home
+</a>
+</li>
+
+<li>
+<a href="#products">
+Products
+</a>
+</li>
+
+<li>
+<a href="#contact">
+Contact
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+
+<div>
+
+<h3>
+PRODUCTS
+</h3>
+
+<ul>
+
+<li>
+<a href="#heating-taps">
+Instant Heating Taps
+</a>
+</li>
+
+<li>
+<a href="#angle-valves">
+Angle Valves
+</a>
+</li>
+
+<li>
+<a href="#shoe-cover">
+Washing Machine Shoe Cover
+</a>
+</li>
+
+<li>
+<a href="#sanitaryware">
+Sanitaryware
+</a>
+</li>
+
+<li>
+<a href="#ac-covers">
+AC Heat Protective Cover
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+
+<div>
+
+<h3>
+CONTACT
+</h3>
+
+<ul>
+
+<li>
+apnappliances@gmail.com
+</li>
+
+</ul>
+
+</div>
+
+
+</div>
+
+
+
+<div class="copyright">
+
+© 2026 APN Appliances. All Rights Reserved.
+
+</div>
+
+</footer>
+
+
+</body>
+</html>
